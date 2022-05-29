@@ -1,0 +1,22 @@
+.social-login {
+    display: flex;
+    align-items: center;
+    transition: background .5s;
+    -webkit-transition: background .5s;
+    padding: 15px;
+    border: 1px solid #eee;
+    background: transparent;
+    border-radius: 50px;
+    color: #333;
+    cursor: pointer;
+    margin-top: 10px;
+    width: 100%;
+}
+
+button {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor: pointer;
+}

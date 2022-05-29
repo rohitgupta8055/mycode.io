@@ -1,0 +1,191 @@
+<script src="https://kit.fontawesome.com/50ca488b33.js" crossorigin="anonymous"></script>
+<link rel="shortcut icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6zP8SduYeHfvwVfFr8KBlO06SeY7qgpLfgA&usqp=CAU" type="image/x-icon">
+<link rel="stylesheet" href="/css/user_profile.css">
+
+
+       
+
+
+
+
+        <body>
+            <header id="head-main">
+                <nav>
+                <ul class="horizontal-list text-center nav-menu">
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Skills</a></li>
+                    <li><a href="">Experience</a></li>
+                    <li><a href="">Education</a></li>
+                    <li><a href="">Portfolio</a></li>
+                    <li><a href="">Contacts</a></li>
+                    <li><a href="/users/update-info">Update Profile</a></li>
+                </ul>
+                </nav>
+            <div>
+                <div class="text-center my-name">
+                    <% if(user.id == profile_user.id){ %>
+                        <h1><%=user.name%></h1>
+                        <h1 style="font-size:large;">EMAIL ID: <%=user.email%></h1>
+                        <%}else{%>   
+                            <%= profile_user.name %>
+                            <p style="font-family: Sans-serif;">  EMAIL ID: <%= profile_user.email %></p>
+                            <%} %> 
+                        </div>   
+                
+                </div>
+                <div>
+                <ul class=" social-icons horizontal-list text-center nav menu" id="u1">
+                    <li><a href="https://www.linkedin.com/in/rohit-kumar-1bb39722a/"><i class="fa-brands fa-linkedin"></i></a></li>
+                    <li><a href="https://www.facebook.com/RohitGupta8055"><i class="fa-brands fa-facebook"></i></a></li>
+                    <li><a href="https://www.instagram.com/rohitgupta_8055/"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href="https://github.com/rohitgupta8055"><i class="fa-brands fa-github-square"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/rohit-kumar-1bb39722a/"><i class="fa-brands fa-linkedin"></i></a></li>
+               
+               
+                </ul>
+                </div>
+        </div>
+        </header>
+        
+        <main>
+        
+            <section1 id="about">
+                <div id="my-img">
+                    <% if(user.id == profile_user.id){ %>
+                        <img src="<%=user.avatar%>" alt="<%=user.name%>">
+                        <%}else{%>    
+                            <img src="<%=profile_user.avatar%>" alt="<%=profile_user.name%>" >
+                            <%} %> 
+                        </div>
+                <p id="font">
+                    My self Rohit Kumar from DELHI TECHNOLOGICAL UNIVERSITY
+                 </p>
+        
+            </section>
+        <section>
+            <div id="skill-div">
+                <h1 class="section-heading">
+                <span><i class="fa-regular fa-address-book"></i></span>
+                <span>SKILLS</span>
+                </h1></div>
+            <div class="skill-display">
+                <div class="skill-progress">
+                    <div class="eighty-five-percentage mb-blue">
+                        <div class="skill-name">
+                        <span><b>C++</b></span>
+        
+                        </div>
+        
+                    </div>
+        
+                </div>
+        
+                <div class="skill-progress">
+                    <div class="eighty-five-percentage mb-blue">
+                        <div class="skill-name">
+                        <span><b>JAVA</b></span>
+        
+                        </div>
+        
+                    </div>
+        
+                </div>
+        
+                <div class="skill-progress">
+                    <div class="eighty-five-percentage mb-blue">
+                        <div class="skill-name">
+                        <span><b>PYTHON</b></span>
+        
+                        </div>
+        
+                    </div>
+        
+                </div>
+                </div>
+                <br>
+                <div class="skill-display">
+                    <div class="skill-progress">
+                        <div class="eighty-five-percentage mb-blue">
+                            <div class="skill-name">
+                            <span><b>HTML</b></span>
+            
+                            </div>
+            
+                        </div>
+            
+                    </div>
+                    
+            
+                    <div class="skill-progress">
+                        <div class="eighty-five-percentage mb-blue">
+                            <div class="skill-name">
+                            <span><b>CSS</b></span>
+            
+                            </div>
+            
+                        </div>
+            
+                    </div>
+            
+                    <div class="skill-progress">
+                        <div class="eighty-five-percentage mb-blue">
+                            <div class="skill-name">
+                            <span><b>JAVASCRIPT</b></span>
+            
+                            </div>
+            
+                        </div>
+            
+                    </div>
+                
+        
+               
+            
+                
+            </div><br><br><br>
+        </section>
+        </main>
+        
+        <footer class="contact">
+            <div class="contact-me">
+                <h2 class="blue">
+                    <b>CONTACT</b>
+                </h2>
+                <form>
+                    <div>
+                        
+                        <label for="first1" class="blue"> Name </label>
+                        <input type="" id="first1" required placeholder="your name">
+                        </div>
+                    <div><br>
+        
+                    <label for="first" class="blue"> Email </label>
+                    <input type="email" id="first" required placeholder="abc@gmail.com">
+                    </div>
+                    <div><br>
+                    <label for="second" class="blue"> Message </label>
+                    <input type="" id="second" required placeholder=" type your message here......">
+                    </div>
+                    <div>
+                        <br>
+                    <input type="submit" class="blue">
+                    </div>
+                    </form>
+            </div>
+            <div class="section-headings">
+           <span><i class="fa-solid fa-address-card"></i></span>
+            <span><h1>CONTACTS</h1></span>
+            <div class="location">
+            <h2 style="color: brown;">
+            Phone NO. 9354168293<br>
+            EmailId. guptarohit23022002@gmail.com<br>
+            <span><i class="fa-solid fa-location-dot"></i></span>
+            <span style="color: brown;">Delhi,India</span>
+        
+            </h2>
+            </div>
+           </div>
+        
+        </footer>
+        </body>
